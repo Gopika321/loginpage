@@ -64,7 +64,6 @@ class _MyHomePageState extends State<MyHomePage> {
       obscureText: false,
       style: style,
       decoration: InputDecoration(
-        contentPadding: EdgeInsets.fromLTRB(20.0, 15.0, 20.0, 15.0),
         hintText: "Enter your username",
         labelText: "Username",
         suffixIcon: SvgPicture.asset("assets/username.svg"),
@@ -72,25 +71,20 @@ class _MyHomePageState extends State<MyHomePage> {
           maxHeight: 100.0,
           maxWidth: 100.0,
         ),
-        border: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(32.0),
-        ),
       ),
     );
     final passwordField = TextField(
       obscureText: true,
       style: style,
       decoration: InputDecoration(
-          contentPadding: EdgeInsets.fromLTRB(20.0, 15.0, 20.0, 15.0),
-          labelText: "Password",
-          hintText: "Enter your password",
-          suffixIcon: SvgPicture.asset("assets/password.svg"),
-          suffixIconConstraints: BoxConstraints(
-            maxHeight: 100.0,
-            maxWidth: 100.0,
-          ),
-          border:
-              OutlineInputBorder(borderRadius: BorderRadius.circular(32.0))),
+        labelText: "Password",
+        hintText: "Enter your password",
+        suffixIcon: SvgPicture.asset("assets/password.svg"),
+        suffixIconConstraints: BoxConstraints(
+          maxHeight: 100.0,
+          maxWidth: 100.0,
+        ),
+      ),
     );
     final loginButon = Material(
       elevation: 5.0,
